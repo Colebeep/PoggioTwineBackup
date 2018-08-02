@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+<script>
+
+$(document).ready(function(){
+    var j;
+    //var rikaraw;
+    //it is pronounced lee-ah 
+    //console.log(cheatrika); 
+    //$.getJSON("rika.json", function(data){
+    //	rikaraw = data;
+    //});
+    //var datadict = {  
+   // 	"rika": JSON.stringify(window.rikadata)
+    //};
+//    console.log(datadict["rika"]);
+/*    $("#getrika").click(function(){
+    	var imgurl = datadict["rika"]["oc-gen:has-obs"][0]["oc-pred:link"][1]["oc-gen:thumbnail-uri"]
+    		$("#rikaimg").append('<img id="testR" src="' + imgurl + '"/>');
+    		var descript = data["oc-gen:has-obs"][0]["oc-pred:24-description"][0]["xsd:string"]
+    		$("#rikaimg").append('<a>' + descript + '</a>');	
+    });
+*/
+   console.log("document is .ready")
+    $("#get").click(function(){
+    	$.getJSON("https://opencontext.org/subjects/B2A97AE6-2A6A-4788-00E4-815492483665.json", function(data){
+    		
+    		console.log(data);
+    		//console.log(JSON.stringify(data));
+    		console.log(data.features[0].properties.href);
+    		console.log(data["oc-gen:has-obs"][0]["oc-pred:link"][0]["oc-gen:thumbnail-uri"]);
+    		var imgurl = data["oc-gen:has-obs"][0]["oc-pred:link"][0]["oc-gen:thumbnail-uri"]
+    		$("#images").append('<img id="test" src="' + imgurl + '"/>');
+    	});
+    });
+    $("#getrika").click(function(){
+    	$.getJSON("https://opencontext.org/subjects/D2B74768-3A11-49DA-CD14-37720FD6E74C.json", function(data){
+
+    		console.log("Outputs for rika data:");
+    		sessionStorage.setItem("rikastore",JSON.stringify(data));
+    		//console.log(JSON.parse(sessionStorage.getItem("rikastore")));
+    		console.log(data["oc-gen:has-obs"][0]);
+    		console.log(data.features[0].properties.href);
+    		console.log(data["oc-gen:has-obs"][0]["oc-pred:link"][0]["oc-gen:thumbnail-uri"]);
+    		var imgurl = data["oc-gen:has-obs"][0]["oc-pred:link"][1]["oc-gen:thumbnail-uri"]
+    		$("#rikaimg").append('<img id="testR" src="' + imgurl + '"/>');
+    		var descript = data["oc-gen:has-obs"][0]["oc-pred:24-description"][0]["xsd:string"]
+    		$("#rikaimg").append('<a>' + descript + '</a>');
+    	});
+    });
+    //"key" in dict;//return true if there is a key of value key in dict
+    //*/    
+});
+</script>
+</head>
+<body>
+
+<button id="get" type="button" class="btn btn-dark">Get JSON data</button>
+<button id="getrika" type="button" class="btn btn-light">Get JSON Data (rika)</button>
+
+<div id="images"></div>
+<div id="rikaimg"></div>
+<div class="container">
+	<table class="table table-striped">
+		
+	</table>
+</div>
+
+</body>
+<style>
+#rikaimg{
+	width:auto;
+	height:auto;
+}
+</style>
+
+
+<!--
+$.getJSON() is equivalent to
+
+$.ajax({
+  dataType: "json",
+  url: 'http://smart-ip.net/geoip-json/ip_address',
+  data: data,
+  success: function(data){ // do something here }
+});
+In this form you can add additional parameters, such as cache:true, or any other $.ajax parameters you might need.
+
+
+
+or should i use jquerry's .data method to store in the DOM
+
+
+
+or
+You could use localStorage like that:
+
+var smartIp = JSON.parse(localStorage.getItem('smartIp'));
+
+if (!smartIp) $.getJSON('http://smart-ip.net/geoip-json?callback=?', function (data) {
+    smartIp = localStorage.setItem('smartIp', JSON.stringify(data));
+});
+DEMO
+
+So, in your specific case, you should use this code in your header.php page:
+
+var smartIp = JSON.parse(localStorage.getItem('smartIp'));
+
+if (!smartIp) $.getJSON('http://smart-ip.net/geoip-json?callback=?', function (data) {
+    smartIp = localStorage.setItem('smartIp', JSON.stringify(data));
+    $('#flag').html("<a class='fancybox-inline int' href='#international'><img src='/images/flags/" + data.countryCode + ".png'></a>");
+});
+else $('#flag').html("<a class='fancybox-inline int' href='#international'><img src='/images/flags/" + smartIp.countryCode + ".png'></a>");
+
+https://stackoverflow.com/questions/17379312/cache-json-response
+-->
+<script>
+if (window.File && window.FileReader && window.FileList && window.Blob) {
+
+} else {
+  alert('The File APIs are not fully supported in this browser.');
+}
+</script>
+<script>
+/*
+	var xobj = new XMLHttpRequest();
+	xobj.overrideMimeType("rika.json");
+	xobj.open('GET', 'rika.json', true);
+	xobj.onreadystatechange = function () {
+		if (xobj.readyState == 4 && xobj.status == "200") {
+
+			// .open will NOT return a value but simply returns undefined in async mode so use a callback
+			callback(xobj.responseText);
+		}
+	}
+	xobj.send(null);
+
+//}
+
+	// Call to function with anonymous callback
+	loadJSON(function(response) {
+		// Do Something with the response e.g.
+		//jsonresponse = JSON.parse(response);
+
+		// Assuming json data is wrapped in square brackets as Drew suggests
+		//console.log(jsonresponse[0].name);
+*/
+</script>

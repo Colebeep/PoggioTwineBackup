@@ -1,0 +1,384 @@
+  {
+    "@context": [
+        "https://opencontext.org/contexts/item.json",
+        "http://geojson.org/geojson-ld/geojson-context.jsonld",
+        {
+            "oc-pred:24-photo-id": {
+                "owl:sameAs": "http://opencontext.org/predicates/9CBA4E64-D871-4CBE-33A8-B79FD1BAC9AB",
+                "label": "Photo ID",
+                "slug": "24-photo-id",
+                "oc-gen:predType": "variable",
+                "type": "xsd:integer"
+            },
+            "oc-pred:24-image-type": {
+                "owl:sameAs": "http://opencontext.org/predicates/B8556EAA-CF52-446B-39FA-AE4798C13A6B",
+                "label": "Image Type",
+                "slug": "24-image-type",
+                "oc-gen:predType": "variable",
+                "type": "@id"
+            },
+            "oc-pred:24-photo-type": {
+                "owl:sameAs": "http://opencontext.org/predicates/114C8D83-2A40-400F-99D9-2C66A956AFB7",
+                "label": "Photo Type",
+                "slug": "24-photo-type",
+                "oc-gen:predType": "variable",
+                "type": "@id"
+            },
+            "oc-pred:24-title": {
+                "owl:sameAs": "http://opencontext.org/predicates/08BC76A7-5240-48CC-1998-8F861EEB08BF",
+                "label": "Title",
+                "slug": "24-title",
+                "oc-gen:predType": "variable",
+                "type": "xsd:string"
+            },
+            "oc-pred:24-description": {
+                "owl:sameAs": "http://opencontext.org/predicates/7DBB5CB7-599F-42D5-61EE-1955CF898990",
+                "label": "Description",
+                "slug": "24-description",
+                "oc-gen:predType": "variable",
+                "type": "xsd:string"
+            },
+            "oc-pred:24-original-filename": {
+                "owl:sameAs": "http://opencontext.org/predicates/d21eed26-799f-428d-aa3f-f38d4c613b91",
+                "label": "Original Filename",
+                "slug": "24-original-filename",
+                "oc-gen:predType": "variable",
+                "type": "xsd:string"
+            }
+        }
+    ],
+    "id": "http://opencontext.org/media/8fbb8772-4eca-4752-b1ba-57edbf4ca99b",
+    "uuid": "8fbb8772-4eca-4752-b1ba-57edbf4ca99b",
+    "slug": "24-photo-20090211-front",
+    "label": "Photo 20090211 Front",
+    "category": [
+        "oc-gen:image"
+    ],
+    "oc-gen:has-linked-context-path": {
+        "id": "#context-1",
+        "type": "oc-gen:contexts",
+        "oc-gen:has-path-items": [
+            {
+                "id": "http://opencontext.org/subjects/B66A08F2-5D96-4DD4-1AB1-32880C9A8D9D",
+                "slug": "italy",
+                "label": "Italy",
+                "type": "oc-gen:cat-region"
+            },
+            {
+                "id": "http://opencontext.org/subjects/871B9EF8-BC68-4190-5F8A-00882C0040A4",
+                "slug": "24-poggio-civitate",
+                "label": "Poggio Civitate",
+                "type": "oc-gen:cat-site"
+            },
+            {
+                "id": "http://opencontext.org/subjects/98A310A0-BADD-4663-24D7-A359A265D778",
+                "slug": "24-tesoro",
+                "label": "Tesoro",
+                "type": "oc-gen:cat-area"
+            },
+            {
+                "id": "http://opencontext.org/subjects/B22E180C-E0E9-4431-2DAD-B98CE739D254",
+                "slug": "24-tesoro-52",
+                "label": "Tesoro 52",
+                "type": "oc-gen:cat-trench"
+            },
+            {
+                "id": "http://opencontext.org/subjects/7A2631C5-ABBD-46F6-6A6B-0C23EA819370",
+                "slug": "24-2009-id612",
+                "label": "2009, ID:612",
+                "type": "oc-gen:cat-exc-unit"
+            },
+            {
+                "id": "http://opencontext.org/subjects/97ea1ad8-81a6-48a5-a652-c3c0f67de273",
+                "slug": "24-locus-12-18",
+                "label": "Locus 12",
+                "type": "oc-gen:cat-locus"
+            },
+            {
+                "id": "http://opencontext.org/subjects/D2B74768-3A11-49DA-CD14-37720FD6E74C",
+                "slug": "24-pc-20090211",
+                "label": "PC 20090211",
+                "type": "oc-gen:cat-object"
+            }
+        ]
+    },
+    "oc-gen:has-obs": [
+        {
+            "id": "#obs-1",
+            "oc-gen:sourceID": "ref:2464455284024",
+            "oc-gen:obsStatus": "active",
+            "type": "oc-gen:observations",
+            "oc-pred:24-photo-id": [
+                34882.0
+            ],
+            "oc-pred:24-image-type": [
+                {
+                    "id": "http://opencontext.org/types/983b0ba6-0b6a-4b87-94ff-82880e09ecfd",
+                    "slug": "24-photo-4",
+                    "label": "Photo"
+                }
+            ],
+            "oc-pred:24-photo-type": [
+                {
+                    "id": "http://opencontext.org/types/c6f0f104-dcaf-46d6-a6d6-bac9ff2d0587",
+                    "slug": "24-cataloged-artifact-1",
+                    "label": "Cataloged Artifact"
+                }
+            ],
+            "oc-pred:24-title": [
+                {
+                    "id": "#string-C72B938E-EB8B-4DCE-9F36-9274C9181A40",
+                    "xsd:string": "Inscribed Rocchetto Fragment"
+                }
+            ],
+            "oc-pred:24-description": [
+                {
+                    "id": "#string-b7e2adef-f215-4035-b102-90ac3b5925c4",
+                    "xsd:string": "Rocchetto fragment preserves a domed head that comes to an edge before tapering into the shaft.  On the shaft of the rocchetto is an inscription composed of four incised Etruscan letters (right to left): Rho, Iota (or Lambda), Khi, Alpha"
+                }
+            ],
+            "oc-pred:24-original-filename": [
+                {
+                    "id": "#string-5930d433-aac4-46aa-8e5c-557736fb30df",
+                    "xsd:string": "20090211Front.jpg"
+                }
+            ]
+        }
+    ],
+    "features": [
+        {
+            "properties": {
+                "contained-in-region": true,
+                "location-precision-note": "Location data available with no intentional reduction in precision.",
+                "reference-slug": "24-pc-20090211",
+                "reference-type": "inferred",
+                "id": "#geo-props-1",
+                "location-region-note": "This point represents the center of the region containing this item.",
+                "type": "oc-gen:discovey-location",
+                "reference-label": "PC 20090211",
+                "reference-uri": "http://opencontext.org/subjects/D2B74768-3A11-49DA-CD14-37720FD6E74C",
+                "href": "http://opencontext.org/media/8fbb8772-4eca-4752-b1ba-57edbf4ca99b"
+            },
+            "when": {
+                "id": "#event-when-1",
+                "type": "oc-gen:formation-use-life",
+                "start": "-0699",
+                "stop": "-0534",
+                "reference-type": "inferred",
+                "reference-uri": "http://opencontext.org/subjects/871B9EF8-BC68-4190-5F8A-00882C0040A4",
+                "reference-label": "Poggio Civitate"
+            },
+            "id": "#geo-1",
+            "geometry": {
+                "coordinates": [
+                    11.401858682155837,
+                    43.1527378695732
+                ],
+                "id": "#geo-geom-1",
+                "type": "Point"
+            },
+            "type": "Feature"
+        }
+    ],
+    "type": "FeatureCollection",
+    "oc-gen:has-files": [
+        {
+            "id": "https://iiif.archivelab.org/iiif/opencontext-24-photo-20090211-front/info.json",
+            "type": "oc-gen:iiif",
+            "dc-terms:hasFormat": "",
+            "dcat:size": 0.0
+        },
+        {
+            "id": "https://archive.org/download/opencontext-24-photo-20090211-front/24-photo-20090211-front.jpg",
+            "type": "oc-gen:ia-fullfile",
+            "dc-terms:hasFormat": "",
+            "dcat:size": 0.0
+        },
+        {
+            "id": "https://artiraq.org/static/opencontext/poggio-civitate/to-2017/full/20090211Front.jpg",
+            "type": "oc-gen:fullfile",
+            "dc-terms:hasFormat": "http://purl.org/NET/mediatypes/image/jpeg",
+            "dcat:size": 87713.0
+        },
+        {
+            "id": "https://artiraq.org/static/opencontext/poggio-civitate/to-2017/preview/20090211Front.jpg",
+            "type": "oc-gen:preview",
+            "dc-terms:hasFormat": "http://purl.org/NET/mediatypes/image/jpeg",
+            "dcat:size": 60973.0
+        },
+        {
+            "id": "https://artiraq.org/static/opencontext/poggio-civitate/to-2017/thumbs/20090211Front.jpg",
+            "type": "oc-gen:thumbnail",
+            "dc-terms:hasFormat": "http://purl.org/NET/mediatypes/image/jpeg",
+            "dcat:size": 6565.0
+        }
+    ],
+    "dc-terms:title": "Photo 20090211 Front from Italy/Poggio Civitate/Tesoro/Tesoro 52/2009, ID:612/Locus 12/PC 20090211",
+    "dc-terms:issued": "2017-10-04",
+    "dc-terms:modified": "2017-07-29",
+    "dc-terms:isPartOf": [
+        {
+            "id": "http://opencontext.org/projects/DF043419-F23B-41DA-7E4D-EE52AF22F92F",
+            "slug": "24-murlo",
+            "label": "Murlo"
+        }
+    ],
+    "dc-terms:temporal": [
+        {
+            "id": "http://n2t.net/ark:/99152/p06v8w4g9dz",
+            "slug": "periodo-p06v8w4g9dz",
+            "label": "Archaic (580 BCE - 482 BCE)",
+            "reference-type": "inferred",
+            "reference-uri": "http://opencontext.org/subjects/871B9EF8-BC68-4190-5F8A-00882C0040A4",
+            "reference-label": "Poggio Civitate"
+        },
+        {
+            "id": "http://n2t.net/ark:/99152/p06v8w45852",
+            "slug": "periodo-p06v8w45852",
+            "label": "Orientalizing (750 BCE - 582 BCE)",
+            "reference-type": "inferred",
+            "reference-uri": "http://opencontext.org/subjects/871B9EF8-BC68-4190-5F8A-00882C0040A4",
+            "reference-label": "Poggio Civitate"
+        }
+    ],
+    "dc-terms:license": [
+        {
+            "id": "http://creativecommons.org/licenses/by/4.0/",
+            "slug": "cc-license-by-4-0",
+            "label": "Attribution 4.0"
+        }
+    ],
+    "dc-terms:creator": [
+        {
+            "id": "http://opencontext.org/persons/61D87033-881E-48B9-FF27-27337BBCDAA0",
+            "slug": "24-anthony-tuck",
+            "label": "Anthony Tuck",
+            "type": "foaf:Person"
+        }
+    ],
+    "@graph": [
+        {
+            "@id": "oc-gen:image",
+            "label": "Image",
+            "rdfs:subClassOf": [
+                {
+                    "id": "http://opencontext.org/vocabularies/oc-general/media",
+                    "slug": "oc-gen-media",
+                    "label": "Media"
+                }
+            ]
+        },
+        {
+            "@id": "oc-gen:cat-region",
+            "label": "Region",
+            "rdfs:subClassOf": [
+                {
+                    "id": "http://opencontext.org/vocabularies/oc-general/cat-loc-or-context",
+                    "slug": "oc-gen-cat-loc-or-context",
+                    "label": "Location or Context"
+                }
+            ],
+            "oc-gen:hasIcon": [
+                {
+                    "id": "http://artiraq.org/static/oc/icons/region.jpg"
+                }
+            ]
+        },
+        {
+            "@id": "oc-gen:cat-site",
+            "label": "Site",
+            "rdfs:subClassOf": [
+                {
+                    "id": "http://opencontext.org/vocabularies/oc-general/cat-loc-or-context",
+                    "slug": "oc-gen-cat-loc-or-context",
+                    "label": "Location or Context"
+                }
+            ],
+            "oc-gen:hasIcon": [
+                {
+                    "id": "http://artiraq.org/static/oc/icons/site.jpg"
+                }
+            ]
+        },
+        {
+            "@id": "oc-gen:cat-area",
+            "label": "Area",
+            "oc-gen:hasIcon": [
+                {
+                    "id": "http://artiraq.org/static/oc/icons/operation-area.jpg"
+                }
+            ],
+            "rdfs:subClassOf": [
+                {
+                    "id": "http://opencontext.org/vocabularies/oc-general/cat-site-area",
+                    "slug": "oc-gen-cat-site-area",
+                    "label": "Site Area"
+                }
+            ]
+        },
+        {
+            "@id": "oc-gen:cat-trench",
+            "label": "Trench",
+            "oc-gen:hasIcon": [
+                {
+                    "id": "http://artiraq.org/static/oc/icons/ex-square.jpg"
+                }
+            ],
+            "rdfs:subClassOf": [
+                {
+                    "id": "http://opencontext.org/vocabularies/oc-general/cat-site-area",
+                    "slug": "oc-gen-cat-site-area",
+                    "label": "Site Area"
+                }
+            ]
+        },
+        {
+            "@id": "oc-gen:cat-exc-unit",
+            "label": "Excavation Unit",
+            "oc-gen:hasIcon": [
+                {
+                    "id": "http://artiraq.org/static/oc/icons/ex-square.jpg"
+                }
+            ],
+            "rdfs:subClassOf": [
+                {
+                    "id": "http://opencontext.org/vocabularies/oc-general/cat-context",
+                    "slug": "oc-gen-cat-context",
+                    "label": "Context"
+                }
+            ]
+        },
+        {
+            "@id": "oc-gen:cat-locus",
+            "label": "Locus",
+            "rdfs:subClassOf": [
+                {
+                    "id": "http://opencontext.org/vocabularies/oc-general/cat-context",
+                    "slug": "oc-gen-cat-context",
+                    "label": "Context"
+                }
+            ],
+            "oc-gen:hasIcon": [
+                {
+                    "id": "http://artiraq.org/static/oc/icons/locus-lot.jpg"
+                }
+            ]
+        },
+        {
+            "@id": "oc-gen:cat-object",
+            "label": "Object",
+            "rdfs:subClassOf": [
+                {
+                    "id": "http://opencontext.org/vocabularies/oc-general/subjects",
+                    "slug": "oc-gen-subjects",
+                    "label": "Subjects"
+                }
+            ],
+            "oc-gen:hasIcon": [
+                {
+                    "id": "http://artiraq.org/static/oc/icons/object.jpg"
+                }
+            ]
+        }
+    ]
+}
